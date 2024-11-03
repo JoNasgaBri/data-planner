@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Diario</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Diario</h1>
+    </header>
+    <main>
+        <section id="task-form">
+            <h2>Adicionar Nova Tarefa</h2>
+            <form id="add-task-form">
+                <input type="text" id="task-title" placeholder="Título da Tarefa" required>
+                <textarea id="task-description" placeholder="Descrição"></textarea> 
+                <input type="date" id="task-date" required>
+                <select id="task-priority">
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+                <select id="task-category">
+                    <option value="trabalho">Trabalho</option>
+                    <option value="pessoal">Pessoal</option>
+                    <option value="saude">Saúde</option>
+                </select>
+                <button type="submit">Adicionar Tarefa</button>           
+            </form>
+        </section>
+        <section id="task-list">
+            <h2>Minhas tarefas</h2>
+            <div id="tasks-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Meu Diario</p>
+    </footer>
+
+
+</body>
+</html>
